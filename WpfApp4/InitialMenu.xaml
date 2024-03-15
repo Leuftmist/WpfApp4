@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp4.InitialMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="InitialMenu" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Lbl_initialdisplay" Content="Welcome to the game" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="100" Width="304"
+               FontSize="22" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="Btn_Submit" Content="Begin" HorizontalAlignment="Center" Margin="0,331,0,0" VerticalAlignment="Top" Height="40" Width="90"
+                FontWeight="Bold" Click="Btn_Submit_Click"/>
+        <CheckBox x:Name="CB_easy" Content="Easy" HorizontalAlignment="Left" Margin="599,158,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CB_Intermediate" Content="Intermediate" HorizontalAlignment="Left" Margin="599,178,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CB_Hard" Content="Hard" HorizontalAlignment="Left" Margin="599,198,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_Description" HorizontalAlignment="Left" Margin="146,158,0,0" TextWrapping="Wrap" Text="-Content here-" VerticalAlignment="Top" Width="159" Height="55"/>
+
+    </Grid>
+</Window>
