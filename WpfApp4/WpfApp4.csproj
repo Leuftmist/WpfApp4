@@ -55,8 +55,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Endingscreen.xaml.cs">
+      <DependentUpon>Endingscreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Instructwindow.xaml.cs">
+      <DependentUpon>Instructwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowManager.cs" />
+    <Compile Include="writescore.xaml.cs">
+      <DependentUpon>writescore.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Endingscreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="InitialMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Instructwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -75,6 +99,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="writescore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,7 +131,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\griddy-ceres-fauna.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FRl5kRDakAEX_wK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\peakpx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="516911.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\pxfuel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="griddy-ceres-fauna.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="prelim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="yes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

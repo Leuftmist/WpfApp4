@@ -7,13 +7,16 @@
         mc:Ignorable="d"
         Title="InitialMenu" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
         <Label x:Name="Lbl_initialdisplay" Content="Welcome to the game" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="100" Width="304"
                FontSize="22" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Button x:Name="Btn_Submit" Content="Begin" HorizontalAlignment="Center" Margin="0,331,0,0" VerticalAlignment="Top" Height="40" Width="90"
                 FontWeight="Bold" Click="Btn_Submit_Click"/>
-        <CheckBox x:Name="CB_easy" Content="Easy" HorizontalAlignment="Left" Margin="599,158,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="CB_Intermediate" Content="Intermediate" HorizontalAlignment="Left" Margin="599,178,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="CB_Hard" Content="Hard" HorizontalAlignment="Left" Margin="599,198,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CB_easy" Content="Easy" HorizontalAlignment="Left" Margin="599,158,0,0" VerticalAlignment="Top" Checked="CB_easy_Checked"/>
+        <CheckBox x:Name="CB_Intermediate" Content="Intermediate" HorizontalAlignment="Left" Margin="599,178,0,0" VerticalAlignment="Top" Checked="CB_Intermediate_Checked" IsChecked="False" ClickMode="Press"/>
+        <CheckBox x:Name="CB_Hard" Content="Hard" HorizontalAlignment="Left" Margin="599,198,0,0" VerticalAlignment="Top" Checked="CB_Hard_Checked"/>
         <TextBox x:Name="TB_Description" HorizontalAlignment="Left" Margin="146,158,0,0" TextWrapping="Wrap" Text="-Content here-" VerticalAlignment="Top" Width="159" Height="55"/>
 
     </Grid>
